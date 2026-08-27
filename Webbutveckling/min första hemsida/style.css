@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #11111b;
+    font-family: ubuntu;
+}
+
+main {
+    min-height: 140vh;
+    background-color: #181825;
+    padding:20px;
+}
+
+footer,
+header,
+section {
+    border: 2px solid #181825;
+    background-color: #1e1e2e;
+    min-height: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #89b4fa;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #cdd6f4;
+}
