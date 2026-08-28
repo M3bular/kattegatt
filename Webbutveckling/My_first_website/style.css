@@ -1,0 +1,60 @@
+* {
+    font-family: ubuntu;
+}
+img{
+    width: 100%;
+}
+body {
+    background-color: #181825;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #1e1e2e;
+    border: 10px solid #1e1e2e;
+}
+
+main {
+    min-height: 140vh;
+    padding: 5vw;
+}
+
+footer,
+nav,
+section {
+    background-color: #11111b ;
+    min-height: 40px;
+    padding: 1vw;
+}
+
+nav {
+    display: grid;
+    gap: 16px;
+    padding: 10px;
+}
+
+nav a {
+    color: #89b4fa;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #cdd6f4;
+}
+
+h1,
+h2 {
+    color: #b4befe;
+}
+
+p {
+    color: #cdd6f4;
+}
+
+@media (min-width:600px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
