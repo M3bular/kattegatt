@@ -1,0 +1,55 @@
+html {
+    background-color: #1e1e2e;
+}
+
+header,
+main,
+footer,
+.content {
+    border: 1px solid #313244;
+    min-height: 10vh;
+    padding: 3%;
+}
+
+div.content {
+    background-color: #11111b;
+}
+
+div.third {
+    background-color: #181825;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fit;
+
+}
+
+.imgBox {
+    aspect-ratio: 1/1;
+    padding: 1%;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.content:last-of-type {
+    background-color: yellowgreen;
+    grid-column: 1/-1;
+}
+.content:nth-of-type(4) {
+    background-color: mediumaquamarine;
+    grid-column: 1/-1;
+}
+
+@media (min-width:600px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
