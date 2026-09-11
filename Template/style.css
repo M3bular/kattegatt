@@ -1,0 +1,12 @@
+html{
+    background-color:#11111b ;
+}
+header,main,footer,nav{
+    border:2px solid black;
+    min-height: 10vh;
+    padding:3%;
+    background-color: #181825;
+}
+main{
+    min-height: 60vh;
+}

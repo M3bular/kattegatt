@@ -34,6 +34,7 @@ img {
 
 main {
     display: grid;
+    grid-template-rows: repeat(5, 1fr);
     gap: 10px;
     column-gap: 30px;
     row-gap: 30px;
@@ -43,9 +44,11 @@ main {
     background-color: yellowgreen;
     grid-column: 1/-1;
 }
+
 .content:nth-of-type(4) {
     background-color: mediumaquamarine;
     grid-column: 1/-1;
+    grid-row: 1/1;
 }
 
 @media (min-width:600px) {

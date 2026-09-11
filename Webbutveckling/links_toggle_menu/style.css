@@ -1,0 +1,51 @@
+html {
+    background-color: #11111b;
+}
+
+header,
+main,
+footer,
+nav,
+.content {
+    border: 1px solid #74c7ec;
+    min-height: 3vh;
+    padding: 3%;
+    background-color: #181825;
+}
+
+main {
+    min-height: 40vh;
+}
+
+.content {
+    min-height: 60vh;
+    display: none;
+}
+
+:target {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bac2de;
+}
+
+nav {
+    display:grid;
+    gap:20px;
+}
+.hidden{
+    display:none;
+}
+
+@media(min-width:600px){
+    nav{
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .MenuButton{
+        display:none
+    }
+}
