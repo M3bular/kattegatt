@@ -17,24 +17,24 @@
 <body>
     <header>
         <button onclick="toggleMenu()" class="MenuButton">&equiv;</button>
-        <nav class="hidden">
-            <a href="#c1">link 1</a>
-            <a href="#c2">link 2</a>
-            <a href="#c3">link 3</a>
-            <a href="#c4">link 4</a>
+        <nav onclick="toggleMenu()" class="mynav">
+            <a href="#c1">Link 1</a>
+            <a href="#c2">Link 2</a>
+            <a href="#c3">Link 3</a>
+            <a href="#c4">Link 4</a>
         </nav>
     </header>
     <main>
-<div class="content" id="c1">CONTENT1</div>
-<div class="content" id="c2">CONTENT2</div>
-<div class="content" id="c3">CONTENT3</div>
-<div class="content" id="c4">CONTENT4</div>
+        <div class="content" id="c1">Content 1</div>
+        <div class="content" id="c2">Content 2</div>
+        <div class="content" id="c3">Content 3</div>
+        <div class="content" id="c4">Content 4</div>
     </main>
     <footer>
         <h3>EOP</h3>
     </footer>
     <script>
-        function toggleMenu(){
+        function toggleMenu() {
             document.querySelector("nav").classList.toggle("hidden")
         }
     </script>

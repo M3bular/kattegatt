@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 html {
     background-color: #11111b;
 }
@@ -7,14 +11,23 @@ main,
 footer,
 nav,
 .content {
-    border: 1px solid #74c7ec;
+    border: 1px solid #cba6f7;
     min-height: 3vh;
-    padding: 3%;
-    background-color: #181825;
+    background-color: #1e1e2e;
+}
+header{
+    position:fixed;
+    width:100%;
+}
+header>button {
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
 }
 
 main {
     min-height: 40vh;
+    padding-top: 20vh;
 }
 
 .content {
@@ -32,21 +45,26 @@ nav a {
 }
 
 nav {
-    display:grid;
-    gap:20px;
-}
-.hidden{
-    display:none;
+    display: grid;
+    gap: 20px;
+    background-color: #11111b;
 }
 
-@media(min-width:600px){
-   /*  fix this */
-    nav{
-        grid-template-columns: repeat(4,1fr);
+.hidden {
+    display: none;
+}
+
+@media(min-width:600px) {
+
+    /*  fix this */
+    nav.mynav {
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         justify-items: center;
+        display: grid
     }
-    .MenuButton{
-        display:none
+
+    .MenuButton {
+        display: none
     }
 }
