@@ -43,6 +43,7 @@ main {
 .content:last-of-type {
     background-color: yellowgreen;
     grid-column: 1/-1;
+    grid-row: 4/6;
 }
 
 .content:nth-of-type(4) {
