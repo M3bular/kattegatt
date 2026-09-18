@@ -34,7 +34,7 @@ img {
 
 main {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     gap: 10px;
     column-gap: 30px;
     row-gap: 30px;
@@ -43,7 +43,7 @@ main {
 .content:last-of-type {
     background-color: yellowgreen;
     grid-column: 1/-1;
-    grid-row: 4/6;
+    grid-row: 7/9;
 }
 
 .content:nth-of-type(4) {
