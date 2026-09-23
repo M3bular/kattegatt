@@ -37,7 +37,7 @@ img {
 main {
     display: grid;
     grid-template-rows: none;
-    gap: 10px;
+    gap: 10pxf;
     height: auto;
     column-gap: 30px;
     row-gap: 30px;
