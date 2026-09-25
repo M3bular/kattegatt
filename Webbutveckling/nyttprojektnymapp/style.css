@@ -1,0 +1,49 @@
+*{
+   margin: 0;
+   box-sizing: border-box; 
+   font-family: 'Ubuntu';
+}
+html{
+    background-color:#11111b ;
+}
+header,main,footer, div,nav{
+    border:2px solid black;
+    min-height: 10vh;
+    padding:3%;
+    background-color: #181825;
+}
+main{
+    min-height: 60vh;
+    gap:20px
+}
+/* bilder */
+img{
+    width:100%;
+    display:block;
+}
+.card{
+    display: grid;
+    gap:10px
+}
+.imgbox{
+    padding:0;
+}
+
+
+
+
+
+@media(min-width:600px){
+    .imgbox{
+        aspect-ratio: 2/3; 
+        overflow: hidden;
+        img{
+            height:100%;
+            object-fit: cover;
+        }
+    }
+    main{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
