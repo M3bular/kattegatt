@@ -1,0 +1,64 @@
+* {
+    font-family: Ubuntu;
+    margin: 0;
+    box-sizing: border-box;
+    color: #cdd6f4;
+}
+
+header,
+footer,
+main,
+nav {
+    border: 2px solid limegreen;
+    min-height: 10vh;
+    background-color: #1e1e2e;
+    padding: 3%;
+
+}
+
+footer, header {
+    background-color: #181825;
+}
+
+main {
+    min-height: 160vh;
+}
+
+nav {
+    font-size: large;
+    display: grid;
+    gap: 20px;
+    background-color: #11111b;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: 700;
+    color: #89b4fa
+}
+button{
+    background-color: transparent;
+    font-size:3rem;
+    border:none
+    
+}
+button:hover{
+    color:#a6adc8
+}
+
+.hidden{
+    display:none
+}
+
+
+@media(min-width:600px){
+    nav{
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        place-items: center;
+        display: grid;
+    }
+}
