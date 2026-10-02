@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, nav{
+            border:1px solid;
+            padding:3%;
+            
+        }
+        nav{
+            transition: transform 2s;
+            background-color: blue;
+        }
+        .hidden{
+            transform: translateY(-300px);
+    
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button onclick="document.querySelector('nav').classList.toggle('hidden')">toggle</button>
+ 
+
+    </header>
+           <nav>
+
+        </nav>
+    
+</body>
+</html>
