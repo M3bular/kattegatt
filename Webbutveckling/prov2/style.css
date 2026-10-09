@@ -1,9 +1,10 @@
 @import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
 * {
     font-family: Ubuntu;
     scroll-behavior: smooth;
     margin: 0;
-    color:var(--ctp-mocha-text);
+    color: var(--ctp-mocha-text);
     box-sizing: border-box;
 }
 
@@ -16,40 +17,77 @@ nav {
     padding: 3%;
     background-color: var(--ctp-mocha-base);
 }
-footer, header{
+
+footer,
+header {
     background-color: var(--ctp-mocha-mantle);
 }
-main {
-    min-height: 60vh;
-}
-img{
-    width:100%;
-    height:100%;
-    display:block;
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
     object-fit: fit;
 }
-iframe{
-    width:100%;
-    height:100%;
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
-button{
-    background-color:transparent;
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--ctp-mocha-mauve);
+    border-radius: 10px;
+    font-size:xx-large
+}
+p{
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+a{
+    text-decoration: none;
     border:2px solid var(--ctp-mocha-mauve);
-    border-radius: 5px;
+    border-radius: 10px;
+    padding:2px;
+    font-weight: 500;
+    font-size:x-large;
 }
-.imgbox{
+.hidden{
+    display:none;
+}
+.imgbox {
     border: 2px solid black;
-    border-radius:10px;
+    border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 1/1;
 }
-.iframe{
+
+.iframe {
     overflow: hidden;
     aspect-ratio: 16/9;
     border-radius: 10px;
 }
-.textbox{
-    padding-top:15px
+
+.textbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hover:hover{
+    color:var(--ctp-mocha-mauve)
 }
 
 
+@media(min-width: 600px){
+    header button{
+        display:none;
+    }
+    header nav.hidden{
+        display:grid;
+    }
+    .cardbox{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}

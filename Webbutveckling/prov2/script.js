@@ -1,3 +1,3 @@
 function togglehidden(){
-document.querySelector(nav)
+    document.querySelector("nav").classList.toggle("hidden");
 }
