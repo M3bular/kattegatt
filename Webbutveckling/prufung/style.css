@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
 * {
     font-family: Ubuntu;
     margin: 0;
@@ -10,21 +12,21 @@ header,
 footer,
 main,
 nav {
-    background-color: #1e1e2e;
+    background-color: var(--ctp-mocha-base);
     padding: 3%;
 
 }
 
 footer,
 header {
-    background-color: #181825;
+    background-color: var(--ctp-mocha-mantle);
 }
 
 nav {
     font-size: large;
     display: grid;
     gap: 20px;
-    background-color: #11111b;
+    border-radius: 10px;
 
 }
 
@@ -34,7 +36,7 @@ a {
 
 nav a:hover {
     font-weight: 700;
-    color: #89b4fa
+    color: var(--ctp-mocha-blue)
 }
 
 button {
@@ -66,8 +68,11 @@ img {
     height: 100%;
     display: block;
     object-fit: fit;
-}
 
+}
+h4 a:hover{
+    color: #a6adc8
+}
 .imgbox {
     padding: 0;
     border-radius: 10px;
@@ -76,6 +81,10 @@ img {
 .card {
     display: grid;
     padding: 10px;
+}
+
+.spacing {
+    padding: 10px
 }
 
 
@@ -94,7 +103,6 @@ img {
     .imgbox {
         aspect-ratio: 1/2;
         overflow: hidden;
-
     }
 
     nav {

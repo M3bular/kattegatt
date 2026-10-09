@@ -1,0 +1,55 @@
+@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+* {
+    font-family: Ubuntu;
+    scroll-behavior: smooth;
+    margin: 0;
+    color:var(--ctp-mocha-text);
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer,
+nav {
+    border: 2px solid var(--ctp-mocha-mauve);
+    min-height: 10vh;
+    padding: 3%;
+    background-color: var(--ctp-mocha-base);
+}
+footer, header{
+    background-color: var(--ctp-mocha-mantle);
+}
+main {
+    min-height: 60vh;
+}
+img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit: fit;
+}
+iframe{
+    width:100%;
+    height:100%;
+}
+button{
+    background-color:transparent;
+    border:2px solid var(--ctp-mocha-mauve);
+    border-radius: 5px;
+}
+.imgbox{
+    border: 2px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
+.iframe{
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+}
+.textbox{
+    padding-top:15px
+}
+
+
