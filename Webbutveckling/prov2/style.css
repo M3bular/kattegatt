@@ -1,15 +1,12 @@
 @import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
 
-
 * {
     font-family: Ubuntu;
     scroll-behavior: smooth;
     margin: 0;
     color: var(--ctp-mocha-text);
-    color: var(--ctp-mocha-text);
     box-sizing: border-box;
 }
-
 header,
 main,
 footer,
@@ -21,21 +18,15 @@ nav {
 
 footer,
 header {
-
-footer,
-header {
     background-color: var(--ctp-mocha-mantle);
 }
+
 img {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: fit;
+    object-fit: cover;
 }
-
-iframe {
-    width: 100%;
-    height: 100%;
 
 iframe {
     width: 100%;
@@ -50,7 +41,9 @@ button {
     font-weight: 700;
 }
 
-button:hover {
+button:hover,
+a:hover,
+.hover:hover {
     color: var(--ctp-mocha-blue);
 }
 
@@ -67,21 +60,25 @@ nav a {
     font-size: large;
     font-weight: 700;
 }
-a{
-    text-decoration:none;
+
+a {
+    text-decoration: none;
 }
-a:hover {
-    color: var(--ctp-mocha-blue);
+
+h1,
+h2,
+h3 {
+    text-align: center;
 }
-h1, h2, h3{
-    text-align:center;
+
+h2 {
+    padding-bottom: 10px;
 }
-h2{
-    padding-bottom:10px;
-}
+
 footer {
-    text-align:justify;
+    text-align: justify;
 }
+
 .hidden {
     display: none;
 }
@@ -89,43 +86,40 @@ footer {
 .imgbox {
     border: 2px solid black;
     border-radius: 10px;
-    border-radius: 10px;
     overflow: hidden;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
 }
 
 .iframe {
-
-.iframe {
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1.68 / 1;
     border-radius: 10px;
+    padding-bottom:30px;
 }
 
 .textbox {
-    padding-top: 15px
-}
-.hover:hover{
-    color:var(--ctp-mocha-blue)
-}
-.card{
-    padding:10px;
-}
-#bottom{
-    text-align:center;
+    padding-top: 15px;
 }
 
+.card {
+    padding: 10px;
+}
 
+#bottom {
+    text-align: center;
+}
 
-@media(min-width:600px){
-    .contentgrid{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
+@media (min-width: 600px) {
+    nav.hidden {
+        display: grid;
     }
-    button{
-        display:none;
+
+    .contentgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
-    #show{
-        display:grid;
+
+    button {
+        display: none;
     }
 }
