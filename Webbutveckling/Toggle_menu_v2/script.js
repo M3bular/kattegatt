@@ -5,3 +5,4 @@ btn.addEventListener("click", togglebox);
 function togglebox(){
     box.classList.toggle("hidden");
 }
+/* dont do this */
