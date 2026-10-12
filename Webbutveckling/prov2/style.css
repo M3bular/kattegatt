@@ -1,9 +1,10 @@
 @import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
 * {
     font-family: Ubuntu;
     scroll-behavior: smooth;
     margin: 0;
-    color:var(--ctp-mocha-text);
+    color: var(--ctp-mocha-text);
     box-sizing: border-box;
 }
 
@@ -11,45 +12,108 @@ header,
 main,
 footer,
 nav {
-    border: 2px solid var(--ctp-mocha-mauve);
     min-height: 10vh;
     padding: 3%;
     background-color: var(--ctp-mocha-base);
 }
-footer, header{
+
+footer,
+header {
     background-color: var(--ctp-mocha-mantle);
 }
-main {
-    min-height: 60vh;
-}
-img{
-    width:100%;
-    height:100%;
-    display:block;
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
     object-fit: fit;
 }
-iframe{
-    width:100%;
-    height:100%;
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
-button{
-    background-color:transparent;
-    border:2px solid var(--ctp-mocha-mauve);
+
+button {
+    background-color: transparent;
+    border-color: transparent;
     border-radius: 5px;
+    font-size: 50px;
+    font-weight: 700;
 }
-.imgbox{
+
+button:hover {
+    color: var(--ctp-mocha-blue);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    font-size: large;
+    font-weight: 700;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    color: var(--ctp-mocha-blue);
+}
+h1, h2, h3{
+    text-align:center;
+}
+h2{
+    padding-bottom:10px;
+}
+footer {
+    text-align:justify;
+}
+.hidden {
+    display: none;
+}
+
+.imgbox {
     border: 2px solid black;
-    border-radius:10px;
+    border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 1/1;
 }
-.iframe{
+
+.iframe {
     overflow: hidden;
     aspect-ratio: 16/9;
     border-radius: 10px;
 }
-.textbox{
-    padding-top:15px
+
+.textbox {
+    padding-top: 15px
+}
+.hover:hover{
+    color:var(--ctp-mocha-blue)
+}
+.card{
+    padding:10px;
+}
+#bottom{
+    text-align:center;
 }
 
 
+
+@media(min-width:600px){
+    .contentgrid{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    button{
+        display:none;
+    }
+    #show{
+        display:grid;
+    }
+}
