@@ -1,0 +1,1 @@
+# Sortera utan inbyggda funktioner (Bubble Sort)
