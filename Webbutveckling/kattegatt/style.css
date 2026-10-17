@@ -1,0 +1,131 @@
+@import url('https://cdn.jsdelivr.net/npm/@catppuccin/palette/css/catppuccin.css');
+
+* {
+    font-family: Ubuntu;
+    scroll-behavior: smooth;
+    margin: 0;
+    color: var(--ctp-mocha-text);
+    box-sizing: border-box;
+}
+header,
+main,
+footer,
+nav {
+    min-height: 10vh;
+    padding: 3%;
+    background-color: var(--ctp-mocha-base);
+}
+
+footer,
+header {
+    background-color: var(--ctp-mocha-mantle);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+button:hover,
+a:hover,
+.hover:hover {
+    color: var(--ctp-mocha-blue);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    font-size: large;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: justify;
+}
+p{
+    font-size:0.98rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.imgbox {
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.iframe {
+    overflow: hidden;
+    aspect-ratio: 1.68 / 1;
+    border-radius: 10px;
+    padding-bottom:30px;
+}
+
+.textbox {
+    padding-top: 15px;
+}
+
+.card {
+    padding: 10px;
+}
+
+#bottom {
+    text-align: center;
+}
+#cirkel{
+    border-radius: 50%;
+}
+#halmstad{
+    object-fit: contain;
+}
+@media (min-width: 600px) {
+    nav.hidden {
+        display: grid;
+    }
+
+    .contentgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    button {
+        display: none;
+    }
+}
