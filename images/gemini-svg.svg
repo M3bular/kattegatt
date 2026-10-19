@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <style>
+      .segment { stroke: #ffffff; stroke-width: 6; stroke-linejoin: round; }
+      .number-bg { fill: #ffffff; }
+      .number-text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-weight: bold; font-size: 28px; fill: #111111; text-anchor: middle; dominant-baseline: central; }
+    </style>
+  </defs>
+
+  <g transform="translate(300, 300)">
+    <!-- Segment 1 (Mörkblå) -->
+    <path class="segment" fill="#004795" d="M 0.00 -260.00 A 260 260 0 0 1 152.82 210.35 L 73.47 101.13 A 125 125 0 0 0 0.00 -125.00 Z" />
+
+    <!-- Segment 2 (Röd) -->
+    <path class="segment" fill="#D5001C" d="M 148.16 213.65 A 260 260 0 0 1 -152.82 210.35 L -73.47 101.13 A 125 125 0 0 0 71.23 102.72 Z" />
+
+    <!-- Segment 3 (Gul/Orange) -->
+    <path class="segment" fill="#F5A600" d="M -156.46 207.66 A 260 260 0 0 1 -247.27 -79.73 L -118.88 -38.33 A 125 125 0 0 0 -75.22 99.84 Z" />
+
+    <!-- Segment 4 (Orange) -->
+    <path class="segment" fill="#F06A00" d="M -249.25 -73.30 A 260 260 0 0 1 -183.85 -183.85 L -88.39 -88.39 A 125 125 0 0 0 -119.83 -35.24 Z" />
+
+    <!-- Segment 5 (Lila) -->
+    <path class="segment" fill="#732C6C" d="M -180.20 -187.43 A 260 260 0 0 1 -104.08 -238.38 L -50.04 -114.61 A 125 125 0 0 0 -86.63 -90.11 Z" />
+
+    <!-- Segment 6 (Grön) -->
+    <path class="segment" fill="#009A60" d="M -98.92 -240.54 A 260 260 0 0 1 -27.18 -258.58 L -13.07 -124.32 A 125 125 0 0 0 -47.56 -115.64 Z" />
+
+    <!-- Nummer 1 (Justerat till rätt position i mörkblå segmentet) -->
+    <circle class="number-bg" cx="175" cy="-55" r="22" />
+    <text class="number-text" x="175" y="-55">1</text>
+
+    <!-- Nummer 2 -->
+    <circle class="number-bg" cx="-10" cy="195" r="22" />
+    <text class="number-text" x="-10" y="195">2</text>
+
+    <!-- Nummer 3 -->
+    <circle class="number-bg" cx="-185" cy="80" r="22" />
+    <text class="number-text" x="-185" y="80">3</text>
+
+    <!-- Nummer 4 -->
+    <circle class="number-bg" cx="-190" cy="-115" r="22" />
+    <text class="number-text" x="-190" y="-115">4</text>
+
+    <!-- Nummer 5 -->
+    <circle class="number-bg" cx="-130" cy="-175" r="22" />
+    <text class="number-text" x="-130" y="-175">5</text>
+
+    <!-- Nummer 6 -->
+    <circle class="number-bg" cx="-55" cy="-205" r="22" />
+    <text class="number-text" x="-55" y="-205">6</text>
+  </g>
+</svg>

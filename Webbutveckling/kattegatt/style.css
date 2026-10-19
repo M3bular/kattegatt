@@ -128,4 +128,7 @@ p{
     button {
         display: none;
     }
+    p{
+    font-size:1.1rem;
+}
 }
