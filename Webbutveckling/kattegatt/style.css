@@ -41,15 +41,20 @@ button {
     font-weight: 700;
 }
 
+button, a, .hover {
+    transition: scale 0.4s;
+}
+
 button:hover,
 a:hover,
 .hover:hover {
     color: var(--ctp-mocha-blue);
+    scale:1.2
 }
-
+ 
 nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     border-radius: 10px;
@@ -119,7 +124,9 @@ p{
     nav.hidden {
         display: grid;
     }
-
+    nav{
+        grid-template-columns: repeat(4,1fr);
+    }
     .contentgrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
