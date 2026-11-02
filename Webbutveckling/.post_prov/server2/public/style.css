@@ -1,0 +1,10 @@
+header,
+main,
+footer {
+    border: 1px solid;
+    min-height: 10vh;
+    padding: 3%;
+}
+main{
+    min-height:70vh;
+}
