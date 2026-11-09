@@ -3,6 +3,7 @@
     color:#333444;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: normal;
+    scroll-behavior:smooth;
 }
 header,
 main,
@@ -20,6 +21,7 @@ header p a{
 main{
     /* placeholder TA BORT vvvvv */
     min-height:70vh;
+    
 }
 nav{
     display:flex;
@@ -45,11 +47,16 @@ footer{
 }
 h1, h2, h3, h4{
     font-weight: bold;
+    padding-bottom:10px;
+}
+.textbox p {
+    padding-bottom:10px;
 }
 .center{
     display:grid;
     justify-content: center;
     background:none;
+    text-align: center;
 }
 .spacebox{
     padding:3%;
