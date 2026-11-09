@@ -1,20 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/htmx/" />
+    <title>Wirk un proges</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+      integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js" defer></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
-        integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
-        crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-    <header hx-get="comp/header.html" hx-trigger="load" hx-swap="outerHTML"></header>
-    <main hx-get="comp/home.html" hx-trigger="load"></main>
-</body>
-
+  <body>
+    <header
+      hx-get="comp/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></header>
+    <main hx-get="comp/home.html" hx-trigger="load" hx-swap="outerHTML"></main>
+    <footer
+      hx-get="comp/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></footer>
+  </body>
 </html>
