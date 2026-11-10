@@ -1,95 +1,99 @@
 <main>
   <!-- <script>
-        function toggleMenu() {
-            document.querySelector("nav").classList.toggle("hidden")
-        }
+    function toggleMenu() {
+      document.querySelector("nav").classList.toggle("hidden")
+      }
     </script> använda till knappen -->
   <div class="spacebox">
     <h2 class="center">Dragspelskola del 1 och 2</h2>
     <div class="imgbox">
       <img src="/htmx/assets/CollageBokCd_grabakgrundSTOR.png" alt="" />
     </div>
-    <div class="textbox">
-      <p>
-        En mycket omfattande och genomarbetad skola baserad på mångårig
-        erfarenhet. Här lär du dig modern teknik för både piano- och
-        knappdragspel.
-      </p>
+    <button onclick="togglehidden('#content1')"">Innehållsförteckning</button>
+      <div class=" textbox">
+  </div>
+  <div class="textbox">
+    <p>
+      En mycket omfattande och genomarbetad skola baserad på mångårig
+      erfarenhet. Här lär du dig modern teknik för både piano- och
+      knappdragspel.
+    </p>
 
-      <p>
-        Skolan bygger på låtar - det skall vara kul att spela. Du lär dig helt
-        från grunden steg-för-steg.
-      </p>
+    <p>
+      Skolan bygger på låtar - det skall vara kul att spela. Du lär dig helt
+      från grunden steg-för-steg.
+    </p>
 
-      <p>
-        Innehåller repertoar i många stilarter från allra enklaste valsen till
-        mer avancerade låtar.
-      </p>
+    <p>
+      Innehåller repertoar i många stilarter från allra enklaste valsen till
+      mer avancerade låtar.
+    </p>
 
-      <p>
-        Med boken medföljer en CD (mp3/data-cd) med samtliga låtar inspelade
-        till Dragspelskola 1 och 2
-      </p>
-      <h4>Rek. pris del 1: Bok inkl. CD 295 kr.</h4>
-      <h4>Rek. pris del 2: Bok inkl. CD 295 kr.</h4>
-      <button onclick="togglehidden('#text1')"">Se mer</button>
-    </div>
-    <div class=" textbox, hidden" id="text1">
-        <h3 class="center">Presentation av boken dragspelsskola.se del 1 och 2</h3>
-        <p>
-          Denna skola erbjuder ett unikt låtmaterial. Allt är noga utprovat och
-          anpassat till elever. Skolan startar från nybörjarnivå och når till
-          ganska avancerad nivå.
+    <p>
+      Med boken medföljer en CD (mp3/data-cd) med samtliga låtar inspelade
+      till Dragspelskola 1 och 2
+    </p>
+    <h4>Rek. pris del 1: Bok inkl. CD 295 kr.</h4>
+    <h4>Rek. pris del 2: Bok inkl. CD 295 kr.</h4>
+  </div>
+  <button onclick="togglehidden('#textDel1_2')"">info</button>
+    <div class=" textbox, hidden" id="textDel1_2">
+    <h3 class="center">Presentation av boken dragspelsskola.se del 1 och 2</h3>
+    <p>
+      Denna skola erbjuder ett unikt låtmaterial. Allt är noga utprovat och
+      anpassat till elever. Skolan startar från nybörjarnivå och når till
+      ganska avancerad nivå.
 
 
-        </p>
-        <p>
-          Låtmaterialet är mycket blandat, allt för att visa på dragspelets stora
-          bredd.
-        </p>
+    </p>
+    <p>
+      Låtmaterialet är mycket blandat, allt för att visa på dragspelets stora
+      bredd.
+    </p>
 
-        <p>
-          Denna skola bygger huvudsakligen på låtspel och låtarna presenteras i en
-          väl avvägd progression. Nödvändig musikteori presenteras på ett
-          lättfattligt sätt. I del två finns ett kapitel med fördjupning i teori.
-        </p>
+    <p>
+      Denna skola bygger huvudsakligen på låtspel och låtarna presenteras i en
+      väl avvägd progression. Nödvändig musikteori presenteras på ett
+      lättfattligt sätt. I del två finns ett kapitel med fördjupning i teori.
+    </p>
 
-        <p>
-          Skolan är i första hand avsedd för lärarledd undervisning, men kan också
-          användas för självstudier. Låtmaterialet finns inspelat på en
-          medföljande mp3/data-CD. Låtarna är inspelade i ett relativt långsamt
-          tempo så att man skall kunna uppfatta detaljerna.
-        </p>
+    <p>
+      Skolan är i första hand avsedd för lärarledd undervisning, men kan också
+      användas för självstudier. Låtmaterialet finns inspelat på en
+      medföljande mp3/data-CD. Låtarna är inspelade i ett relativt långsamt
+      tempo så att man skall kunna uppfatta detaljerna.
+    </p>
 
-        <p>
-          Har du ingen CD-spelare? Kontakta info@karlssonsmusik.se för
-          nedladdningslänk.
-        </p>
+    <p>
+      Har du ingen CD-spelare? Kontakta info@karlssonsmusik.se för
+      nedladdningslänk.
+    </p>
 
-        <p>
-          Det finns andrastämmor till en del av låtarna. Dessa kan användas för
-          duett- eller ensemblespel. Det finns även information om vad du skall
-          tänka på när du köper dragspel, samt information om olika typer av
-          dragspel.
-        </p>
+    <p>
+      Det finns andrastämmor till en del av låtarna. Dessa kan användas för
+      duett- eller ensemblespel. Det finns även information om vad du skall
+      tänka på när du köper dragspel, samt information om olika typer av
+      dragspel.
+    </p>
 
-        <p>
-          Dessutom finns faktarutor i boken med information som varje dragspelare
-          borde veta om dragspel.
-        </p>
+    <p>
+      Dessutom finns faktarutor i boken med information som varje dragspelare
+      borde veta om dragspel.
+    </p>
 
-        <p>
-          På denna hemsida hittar du en del kompletterande material i form av
-          låtar och ensemblelåtar samt ett enklare teorihäfte som kan laddas ner i
-          PDF-format.
-        </p>
+    <p>
+      På denna hemsida hittar du en del kompletterande material i form av
+      låtar och ensemblelåtar samt ett enklare teorihäfte som kan laddas ner i
+      PDF-format.
+    </p>
     </div>
 
     <h2 class="center">Dragspelskola Convertor-melodibas</h2>
     <div class="imgbox">
       <img src="/htmx/assets/Cover_convertor.png" alt="" />
     </div>
-    <div class="textbox">
+    <button onclick="togglehidden('#contentConvertor')"">Innehållsförteckning</button>
+    <div class=" textbox">
       <p>
         En skola för dig som vill prova på dragspel med melodibas (convertor),
         och som redan spelar standardbas
@@ -107,9 +111,9 @@
 
       <p>Ljudfiler kan laddas ner genom den i boken medföljande QR-koden.</p>
       <h4>Rek. pris "Convertor-melodibas" 295 kr.</h4>
-      <button onclick="togglehidden('#text2')"">Se mer</button>
+      <button onclick="togglehidden('#textConvertor')"">Se mer</button>
     </div>
-    <div class=" textbox, hidden" id="text2">
+    <div class=" textbox, hidden" id="textConvertor">
         <h3 class="center">Presentation av boken convertor melodibas</h3>
 
         <p>
@@ -134,65 +138,81 @@
         </p>
         <p>Repertoaren omfattar allt från enkla visor, folkmusik, klassisk musik samt orginalstycken komponerade för
           dragspel med melodibas. </p>
-    </div>
-    <br>
-    <br>
-    <h2 class="center">Vi tycker till om Dragspelskolan del 1</h2>
-    <div class="textbox">
-      <h4>Jörgen Sundeqvist, Kramfors - Dragspelspedagog och Musiker</h4>
-      <p>Efter många år av pedagogisk verksamhet och erfarenhet, har Håkan Widar äntligen presenterat sin nya
-        dragspelsskola. Skolan är mycket noggrant upplagd och väl genomarbetad. Den passar i alla åldrar och former,
-        både med personlig lärarhandledning såväl som självstudier. Melodivalet är väldigt smakfullt och följer en
-        mycket genomtänkt progression. Skolan är dessutom mycket fint illustrerad och innehåller information och
-        historik som är intressant för alla. Håkan Widars nya dragspelsskola är mycket välkomnad på den svenska
-        marknaden och rekommenderas varmt. </p>
-      <h4> Tommy Nilsson, Örebro. Dragspelspedagog och musiker </h4>
-      <p>Håkan Widars nya dragspelsskola rekommenderas varmt. Det är ett genomarbetat, kompetent, fräscht och
-        heltäckande material som presenteras. Bokens pedagogiska upplägg passar i de flesta åldrar, nivåer och
-        studieformer.
-        <br>
-        STORT TACK HÅKAN! Mvh Tommy Nilsson, Örebro 1/8 2017.
-      </p>
-      <h4>Anita Agnas, Falun - Dragspelspedagog och Musiker</h4>
-      <p>Fantastisk fin och välgjord skola, så genomtänkt och mycket användbar!
-        <br>
-        Från Facebook 21 juli 2017.
-      </p>
-      <h4>Lars-Åke Gustafsson, Enköping - Dragspelspedagog och Musiker</h4>
-      <p>Äntligen en ny Dragspelsskola! Den här är verkligen heltäckande. Allt man behöver finns, den fungerar att
-        använda både med och utan lärare. Tydligheten och den pedagogiska linjen uppskattar jag som pedagog och detta
-        material kommer att bli oerhört användbart i mitt arbete med mina elever. 16 Augusti 2017</p>
-      <h4>Rob Howard - Accordion Worldwide</h4>
-      <p>Accordionist, teacher, and composer Hakan Widar has written and published ‘Dragspelsskola.se’, a 160 page tutor
-        book for accordion, which includes a 105 track mp3 CD. The tutor is aimed at both piano and button accordion
-        players, and the text is written in Swedish. The accordion tuition is built on playing tunes, so although the
-        text is in the Swedish language the method contains a lot of interesting tunes, carefully and progressively
-        graded from beginner level to semi-advanced.
-        <br>
-        <a href="https://accordions.news/">Länk till Accordions Worldwide</a>
-      </p>
-      <h4>Stephanie Saurage, Onsala</h4>
-      <p>Detta är en riktig bra bok får jag tillägga.. Goa, fina bitar som går framåt i en lagom takt. Väluttänkt
-        pedagogik, behaglig typsnitt och storlek på notbild och smakfullt illustrerat. Jag kan MYCKET VARMT rekommendera
-        den!
-        <br>
-        Från Facebook 21 juli 2017.
-      </p>
-      <h4>Ur tidningen "Dragspelsnytt" nr 3, 2017 - Göran Bergman - Accordeon/Dragspelspedagog</h4>
-      <p>Andrew Walter skrev en fantastisk bok som heter den fulländade dragspelstekniken 1961 för 56 år sedan som hade
-        många tekniska övningar! Det är inte ofta det ges ut Svenska böcker i ämnet! Därför är det oerhört glädjande att
-        som pedagog få tillgång till en helt ny modern dragspelsskola som är ett av det mest kompletta genomtänkta
-        utbildningsmaterialet för instrumentet jag har sett författad av Håkan Widar utgiven på Karlssons Musik 2017.
-        <br>
-        Boken omfattar inte bara ett progressivt genomtänkt låtmaterial utan också musikteoriinslag som kvintcirkeln,
-        ackordbyggnad m.m. med intressanta faktarutor om allt från hur man väljer och hanterar sitt instrument till
-        intressant dragspelshistorik genom Håkans historiska kunskaper om instrumentet. Boken har också en medföljande
-        CD skiva med allt material inspelat för lättare instudering.
+        </div>
         <br>
         <br>
-        Det skall bli spännande att få sätta tänderna i Dragspelsskola.se på höstterminsstarten tillsammans med mina
-        elever på Musikskolan. Boken rekommenderas varmt!
-      </p>
-    </div>
-  </div>
+        <h2 class="center">Vi tycker till om Dragspelskolan del 1</h2>
+        <div class="textbox">
+          <h4>Jörgen Sundeqvist, Kramfors - Dragspelspedagog och Musiker</h4>
+          <p>Efter många år av pedagogisk verksamhet och erfarenhet, har Håkan Widar äntligen presenterat sin nya
+            dragspelsskola. Skolan är mycket noggrant upplagd och väl genomarbetad. Den passar i alla åldrar och former,
+            både med personlig lärarhandledning såväl som självstudier. Melodivalet är väldigt smakfullt och följer en
+            mycket genomtänkt progression. Skolan är dessutom mycket fint illustrerad och innehåller information och
+            historik som är intressant för alla. Håkan Widars nya dragspelsskola är mycket välkomnad på den svenska
+            marknaden och rekommenderas varmt. </p>
+          <h4> Tommy Nilsson, Örebro. Dragspelspedagog och musiker </h4>
+          <p>Håkan Widars nya dragspelsskola rekommenderas varmt. Det är ett genomarbetat, kompetent, fräscht och
+            heltäckande material som presenteras. Bokens pedagogiska upplägg passar i de flesta åldrar, nivåer och
+            studieformer.
+            <br>
+            STORT TACK HÅKAN! Mvh Tommy Nilsson, Örebro 1/8 2017.
+          </p>
+          <button onclick="togglehidden('#textcredit')"">Se Mer</button>
+      <div class=" textbox" id="textcredit">
+            <h4>Anita Agnas, Falun - Dragspelspedagog och Musiker</h4>
+            <p>Fantastisk fin och välgjord skola, så genomtänkt och mycket användbar!
+              <br>
+              Från Facebook 21 juli 2017.
+            </p>
+            <h4>Lars-Åke Gustafsson, Enköping - Dragspelspedagog och Musiker</h4>
+            <p>Äntligen en ny Dragspelsskola! Den här är verkligen heltäckande. Allt man behöver finns, den fungerar att
+              använda både med och utan lärare. Tydligheten och den pedagogiska linjen uppskattar jag som pedagog och
+              detta
+              material kommer att bli oerhört användbart i mitt arbete med mina elever. 16 Augusti 2017</p>
+            <h4>Rob Howard - Accordion Worldwide</h4>
+            <p>Accordionist, teacher, and composer Hakan Widar has written and published ‘Dragspelsskola.se’, a 160 page
+              tutor
+              book for accordion, which includes a 105 track mp3 CD. The tutor is aimed at both piano and button
+              accordion
+              players, and the text is written in Swedish. The accordion tuition is built on playing tunes, so although
+              the
+              text is in the Swedish language the method contains a lot of interesting tunes, carefully and
+              progressively
+              graded from beginner level to semi-advanced.
+              <br>
+              <a href="https://accordions.news/">Länk till Accordions Worldwide</a>
+            </p>
+            <h4>Stephanie Saurage, Onsala</h4>
+            <p>Detta är en riktig bra bok får jag tillägga.. Goa, fina bitar som går framåt i en lagom takt. Väluttänkt
+              pedagogik, behaglig typsnitt och storlek på notbild och smakfullt illustrerat. Jag kan MYCKET VARMT
+              rekommendera
+              den!
+              <br>
+              Från Facebook 21 juli 2017.
+            </p>
+            <h4>Ur tidningen "Dragspelsnytt" nr 3, 2017 - Göran Bergman - Accordeon/Dragspelspedagog</h4>
+            <p>Andrew Walter skrev en fantastisk bok som heter den fulländade dragspelstekniken 1961 för 56 år sedan som
+              hade
+              många tekniska övningar! Det är inte ofta det ges ut Svenska böcker i ämnet! Därför är det oerhört
+              glädjande att
+              som pedagog få tillgång till en helt ny modern dragspelsskola som är ett av det mest kompletta genomtänkta
+              utbildningsmaterialet för instrumentet jag har sett författad av Håkan Widar utgiven på Karlssons Musik
+              2017.
+              <br>
+              Boken omfattar inte bara ett progressivt genomtänkt låtmaterial utan också musikteoriinslag som
+              kvintcirkeln,
+              ackordbyggnad m.m. med intressanta faktarutor om allt från hur man väljer och hanterar sitt instrument
+              till
+              intressant dragspelshistorik genom Håkans historiska kunskaper om instrumentet. Boken har också en
+              medföljande
+              CD skiva med allt material inspelat för lättare instudering.
+              <br>
+              <br>
+              Det skall bli spännande att få sätta tänderna i Dragspelsskola.se på höstterminsstarten tillsammans med
+              mina
+              elever på Musikskolan. Boken rekommenderas varmt!
+            </p>
+        </div>
+        </div>
+        </div>
 </main>
