@@ -13,7 +13,7 @@ footer{
     padding:2%;
 }
 header, footer, main{
-    background-color:#b6b8bd;
+    background-color:#eff1f5;
 }
 header p a{
     font-style:italic
@@ -60,7 +60,7 @@ h1, h2, h3, h4{
 }
 .spacebox{
     padding:3%;
-    background-color: #a1a4ad;
+    background-color: #dce0e8;
 }
 .hidden{
     display:none;
