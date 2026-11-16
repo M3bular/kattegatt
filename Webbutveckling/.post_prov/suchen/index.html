@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTENT SEARCH</title>
+    <script src="client.js" defer>babaganoj</script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .content {
+            border: 1px solid;
+            padding: 3%;
+        }
+
+        .fruits {
+            background-color: pink;
+        }
+
+        .cars {
+            background-color: #909090;
+        }
+        .hidden{
+            display: none;
+        }
+
+        header input {
+            display: block;
+            width: 100%;
+            padding: 3%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <input oninput="searchContent(this.value)" type="text" placeholder="SEARCH">
+    </header>
+    <main>
+
+        <div class="content fruits">
+            <h2>Banana</h2>
+            <p>A yellow fruit rich in potassium.</p>
+        </div>
+        <div class="content cars">
+            <h2>Volvo</h2>
+            <p>A Swedish car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>BMW</h2>
+            <p>A German car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Apple</h2>
+            <p>A popular fruit that grows on trees.</p>
+        </div>
+        <div class="content cars">
+            <h2>Toyota</h2>
+            <p>A Japanese car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Audi</h2>
+            <p>A German premium car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Mercedes-Benz</h2>
+            <p>A German luxury car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Orange</h2>
+            <p>A citrus fruit rich in vitamin C.</p>
+        </div>
+        <div class="content cars">
+            <h2>Ford</h2>
+            <p>An American car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Volkswagen</h2>
+            <p>A German car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Kia</h2>
+            <p>A South Korean car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Strawberry</h2>
+            <p>A sweet red berry with small seeds.</p>
+        </div>
+        <div class="content cars">
+            <h2>Hyundai</h2>
+            <p>A South Korean car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Honda</h2>
+            <p>A Japanese car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Nissan</h2>
+            <p>A Japanese car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Peugeot</h2>
+            <p>A French car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Pineapple</h2>
+            <p>A tropical fruit with a sweet and sour taste.</p>
+        </div>
+        <div class="content cars">
+            <h2>Renault</h2>
+            <p>A French automobile manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Skoda</h2>
+            <p>A Czech car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Mazda</h2>
+            <p>A Japanese car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Subaru</h2>
+            <p>A Japanese brand known for all-wheel drive.</p>
+        </div>
+        <div class="content cars">
+            <h2>Mitsubishi</h2>
+            <p>A Japanese car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Watermelon</h2>
+            <p>A large fruit with juicy red flesh.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lexus</h2>
+            <p>A Japanese luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Tesla</h2>
+            <p>An American electric car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Polestar</h2>
+            <p>A Swedish electric car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Cupra</h2>
+            <p>A Spanish performance car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Opel</h2>
+            <p>A German car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Mango</h2>
+            <p>A tropical fruit with soft orange flesh.</p>
+        </div>
+        <div class="content cars">
+            <h2>Fiat</h2>
+            <p>An Italian car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Alfa Romeo</h2>
+            <p>An Italian sports car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Jaguar</h2>
+            <p>A British luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Land Rover</h2>
+            <p>A British manufacturer of SUVs.</p>
+        </div>
+        <div class="content cars">
+            <h2>Porsche</h2>
+            <p>A German sports car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Ferrari</h2>
+            <p>An Italian manufacturer of sports cars.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Grapes</h2>
+            <p>Small round fruits that grow in bunches.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lamborghini</h2>
+            <p>An Italian supercar manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Bentley</h2>
+            <p>A British luxury car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Rolls-Royce</h2>
+            <p>A British luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Maserati</h2>
+            <p>An Italian luxury car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Dacia</h2>
+            <p>A Romanian car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Citroën</h2>
+            <p>A French car manufacturer.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Kiwi</h2>
+            <p>A small fruit with green flesh and tiny seeds.</p>
+        </div>
+        <div class="content cars">
+            <h2>Mini</h2>
+            <p>A British car brand known for compact cars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Smart</h2>
+            <p>A brand known for small city cars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Chevrolet</h2>
+            <p>An American car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Dodge</h2>
+            <p>An American car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Jeep</h2>
+            <p>An American brand known for off-road vehicles.</p>
+        </div>
+        <div class="content cars">
+            <h2>Chrysler</h2>
+            <p>An American automobile brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Cadillac</h2>
+            <p>An American luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Buick</h2>
+            <p>An American automobile brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>GMC</h2>
+            <p>An American manufacturer of trucks and SUVs.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Peach</h2>
+            <p>A soft fruit with fuzzy skin and a large stone.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lincoln</h2>
+            <p>An American luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Acura</h2>
+            <p>A Japanese luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Infiniti</h2>
+            <p>A Japanese premium car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Genesis</h2>
+            <p>A South Korean luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>BYD</h2>
+            <p>A Chinese electric vehicle manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>MG</h2>
+            <p>A British-origin car brand now owned by a Chinese company.</p>
+        </div>
+        <div class="content cars">
+            <h2>Geely</h2>
+            <p>A Chinese automobile manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Nio</h2>
+            <p>A Chinese electric car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Xpeng</h2>
+            <p>A Chinese electric vehicle manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Zeekr</h2>
+            <p>A Chinese premium electric car brand.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Pear</h2>
+            <p>A sweet fruit with a soft and juicy texture.</p>
+        </div>
+        <div class="content cars">
+            <h2>Chery</h2>
+            <p>A Chinese car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Great Wall</h2>
+            <p>A Chinese manufacturer of cars and SUVs.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lynk & Co</h2>
+            <p>A Chinese-Swedish car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Rivian</h2>
+            <p>An American electric vehicle manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lucid</h2>
+            <p>An American electric luxury car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Saab</h2>
+            <p>A Swedish car brand no longer producing cars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lada</h2>
+            <p>A Russian car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Suzuki</h2>
+            <p>A Japanese car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Isuzu</h2>
+            <p>A Japanese manufacturer of vehicles and trucks.</p>
+        </div>
+        <div class="content fruits">
+            <h2>Cherry</h2>
+            <p>A small red fruit with a hard stone.</p>
+        </div>
+        <div class="content cars">
+            <h2>Daihatsu</h2>
+            <p>A Japanese manufacturer of compact cars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Tata</h2>
+            <p>An Indian automobile manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Mahindra</h2>
+            <p>An Indian manufacturer of SUVs and other vehicles.</p>
+        </div>
+        <div class="content cars">
+            <h2>Perodua</h2>
+            <p>A Malaysian car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Proton</h2>
+            <p>A Malaysian automobile manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Holden</h2>
+            <p>An Australian car brand that has ceased production.</p>
+        </div>
+        <div class="content cars">
+            <h2>Pontiac</h2>
+            <p>A former American car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Saturn</h2>
+            <p>A former American car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Hummer</h2>
+            <p>An American brand known for large SUVs.</p>
+        </div>
+        <div class="content cars">
+            <h2>Plymouth</h2>
+            <p>A former American automobile brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Oldsmobile</h2>
+            <p>A former American car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Mercury</h2>
+            <p>A former American car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Scion</h2>
+            <p>A former car brand created by Toyota.</p>
+        </div>
+        <div class="content cars">
+            <h2>Datsun</h2>
+            <p>A historic Japanese car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Alpine</h2>
+            <p>A French sports car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Aston Martin</h2>
+            <p>A British luxury sports car manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>McLaren</h2>
+            <p>A British manufacturer of supercars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Bugatti</h2>
+            <p>A French luxury hypercar manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Pagani</h2>
+            <p>An Italian manufacturer of exclusive hypercars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Koenigsegg</h2>
+            <p>A Swedish manufacturer of high-performance hypercars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Lotus</h2>
+            <p>A British-origin sports car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Morgan</h2>
+            <p>A British manufacturer of sports cars.</p>
+        </div>
+        <div class="content cars">
+            <h2>Caterham</h2>
+            <p>A British manufacturer of lightweight sports cars.</p>
+        </div>
+        <div class="content cars">
+            <h2>TVR</h2>
+            <p>A British sports car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>Rimac</h2>
+            <p>A Croatian electric hypercar manufacturer.</p>
+        </div>
+        <div class="content cars">
+            <h2>Fisker</h2>
+            <p>An American electric car brand.</p>
+        </div>
+        <div class="content cars">
+            <h2>VinFast</h2>
+            <p>A Vietnamese automobile manufacturer.</p>
+        </div>
+
+    </main>
+</body>
+
+</html>
