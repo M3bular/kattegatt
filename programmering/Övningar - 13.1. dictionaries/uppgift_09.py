@@ -8,12 +8,11 @@ data = [
 mydic = {}
 count = 0
 for i in data:
-    staddic = data[count][1]
-    if staddic not in mydic:
-        mydic.update({staddic: ""})
-    print(mydic)
-    """ 
-    namndic=(data[count][0])
-    print(data[count][0])
-    print(data[count][1])
-    count += 1 """
+    stad = i[1]
+    namn = i[0]
+    if stad in mydic:
+        mydic[stad].append(namn)
+    else:
+        mydic[stad] = [namn]
+
+print(mydic)
