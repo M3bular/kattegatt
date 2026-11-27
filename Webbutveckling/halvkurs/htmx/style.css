@@ -27,10 +27,7 @@ main {
 header p a {
   font-style: italic;
 }
-main {
-  /* placeholder TA BORT vvvvv */
-  min-height: 70vh;
-}
+
 nav {
   display: grid;
   justify-content: space-around;
@@ -112,11 +109,10 @@ h4 {
 #wip {
   border: 10px solid red;
 }
+h1{
+  font-size: 6vw;
+}
 @media(min-width:600px){
-    .spacebox{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
     header .spacebox, footer .spacebox{
         display:block
     }
